@@ -1,96 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LuminAI – Coming Soon</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://via.placeholder.com/32x32.png?text=L" type="image/png">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuminAI - AI-powered Solutions</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-      text-align: center;
+      padding: 0;
+      scroll-behavior: smooth;
+      background: #0d1117;
+      color: #f0f0f0;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #161b22;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-      padding: 0 15px;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
+    nav ul li {
+      margin: 0 15px;
     }
-    h2 {
-      font-weight: 300;
-      margin-bottom: 2rem;
-      color: #dddddd;
+    nav ul li a {
+      text-decoration: none;
+      color: #f0f0f0;
+      font-weight: bold;
+      transition: color 0.3s;
     }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
+    nav ul li a:hover {
+      color: #58a6ff;
     }
-    .notify {
-      margin-top: 1rem;
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+      text-align: center;
     }
-    input[type="email"] {
-      padding: 12px;
-      border: none;
-      border-radius: 6px;
-      width: 260px;
-      font-size: 1rem;
+    h1, h2 {
+      margin-bottom: 20px;
     }
-    button {
-      padding: 12px 24px;
-      margin-left: 10px;
-      border: none;
-      border-radius: 6px;
-      background: #ff6600;
-      color: white;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s;
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
-    button:hover {
-      background: #e65c00;
+    .card {
+      background: #21262d;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #58a6ff;
     }
     footer {
-      position: absolute;
-      bottom: 15px;
-      width: 100%;
-      font-size: 0.9rem;
-      color: #bbb;
-    }
-    footer a {
-      color: #ff6600;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
+      background: #161b22;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>🚀 LuminAI</h1>
-  <h2>AI-powered solutions for the world</h2>
-  <p>Our website is under development. Stay tuned for updates!</p>
-  
-  <div class="notify">
-    <input type="email" placeholder="Enter your email" />
-    <button>Notify Me</button>
-  </div>
-  
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#solutions">Solutions</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <h1>Welcome to LuminAI</h1>
+    <p>AI-powered solutions for the world</p>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>AI Tutor</h3>
+        <p>Personalized learning experience for students using AI-powered guidance.</p>
+      </div>
+      <div class="card">
+        <h3>Mental Wellness Bot</h3>
+        <p>A compassionate AI assistant for stress and emotional well-being.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section id="solutions">
+    <h2>Solutions</h2>
+    <p>We build AI-first solutions to revolutionize education and mental health support, designed for accessibility and scalability.</p>
+  </section>
+
+  <!-- Industries Section -->
+  <section id="industries">
+    <h2>Industries We Serve</h2>
+    <p>Our focus industries include:</p>
+    <ul style="list-style:none;">
+      <li>📘 Education</li>
+      <li>💙 Mental Health</li>
+      <li>💡 Future expansion into Environment & Research</li>
+    </ul>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About LuminAI</h2>
+    <p>LuminAI is an AI-powered startup focused on reshaping education and mental health support.  
+       We believe in democratizing access to advanced technology for a better tomorrow.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:founder@luminai.co.in" style="color:#58a6ff;">founder@luminai.co.in</a></p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    © 2025 LuminAI • <a href="mailto:support@luminai.co.in">support@luminai.co.in</a>
+    <p>© 2025 LuminAI. All Rights Reserved.</p>
   </footer>
+
 </body>
 </html>
