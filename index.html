@@ -4,57 +4,78 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LuminAI – Coming Soon</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://via.placeholder.com/32x32.png?text=L" type="image/png">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: white;
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       height: 100vh;
       padding: 0 15px;
     }
     h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
+      font-weight: 600;
     }
     h2 {
       font-weight: 300;
       margin-bottom: 2rem;
-      color: #cccccc;
+      color: #dddddd;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
     }
     .notify {
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
     input[type="email"] {
-      padding: 10px;
+      padding: 12px;
       border: none;
-      border-radius: 5px;
-      width: 250px;
+      border-radius: 6px;
+      width: 260px;
       font-size: 1rem;
     }
     button {
-      padding: 10px 20px;
+      padding: 12px 24px;
       margin-left: 10px;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       background: #ff6600;
       color: white;
       font-size: 1rem;
       cursor: pointer;
+      transition: background 0.3s;
     }
     button:hover {
       background: #e65c00;
     }
     footer {
       position: absolute;
-      bottom: 10px;
+      bottom: 15px;
       width: 100%;
       font-size: 0.9rem;
-      color: #999;
+      color: #bbb;
+    }
+    footer a {
+      color: #ff6600;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -69,8 +90,7 @@
   </div>
   
   <footer>
-    © 2025 LuminAI. All rights reserved.
+    © 2025 LuminAI • <a href="mailto:support@luminai.co.in">support@luminai.co.in</a>
   </footer>
 </body>
 </html>
-
